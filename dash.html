@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <html lang="en" dir="ltr">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/dashb.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Dasboard</title>
+</head>
+
+<body>
+
+  <!--Navbar section-->
+  <div class="layout">
+    <div class="navbar">
+      <div class="logo">
+        <img src="Pic/log.png">
+      </div>
+
+      <div class="search">
+        <input type="search" placeholder="Search...."></input>
+      </div>
+
+      <div class="user-wrapper">
+        <img src="Pic/log.png" width="30px" height="30px" alt="">
+        <div>
+          <h5>John</h5>
+          <small>Admin</small>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sidebar">
+      <a href="#"><i class="fa fa-fw fa-home"><span>HOME</span></i> </a>
+      <a href="#"><i class="fa fa-fw fa-clipboard"><span>BOARD</span></i> </a>
+      <a href="#"><i class="fa fa-fw fa-user"><span>USER</span></i></a>
+      <a href="#"><i class="fa fa-fw fa-envelope"><span>MESSAGE</span></i></a>
+    </div>
+
+    <!--End of Navbar section-->
+
+
+
+    <!--card panel section-->
+
+    <div class="main">
+      <div class="cards-panel">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Bookings</h5>
+            <p class="text-center">20</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Customers</h5>
+            <p class="text-center">100</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Customers</h5>
+            <p class="text-center">100</p>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end of card-panel section-->
+
+
+      <!--Table section-->
+
+      <div class="table-responsive-sm">
+        <table id="tbl" class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Country</th>
+              <th>Route</th>
+              <th>Date</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alvin</td>
+              <td>UK</td>
+              <td>Annapurna</td>
+              <td>10/06/2021</td>
+              <td>
+                <button class="delete"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Alan</td>
+              <td>US</td>
+              <td>Mardi</td>
+              <td>10/08/2021</td>
+              <td>
+                <button class="delete"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Jonathan</td>
+              <td>France</td>
+              <td>Langtang</td>
+              <td>20/02/2021</td>
+              <td>
+                <button class="delete"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Alex</td>
+              <td>Italy</td>
+              <td>Everest</td>
+              <td>25/03/2021</td>
+              <td>
+                <button class="delete"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Brian</td>
+              <td>Thailand</td>
+              <td>Mardi</td>
+              <td>01/06/2021</td>
+              <td>
+                <button class="delete"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Steve</td>
+              <td>Korea</td>
+              <td>Mustang</td>
+              <td>12/07/2021</td>
+              <td>
+                <button class="delete"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Jeff</td>
+              <td>Japan</td>
+              <td>Mardi</td>
+              <td>21/08/2021</td>
+              <td>
+                <button class="delete"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--End of table section-->
+    </div>
+
+    <script src="dash.js"></script>
+</body>
+
+</html>

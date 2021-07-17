@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+
+}
+
+
+.layout {
+min-height:100vh;
+display: grid;
+grid-template-rows: auto 1fr;
+grid-template-columns:140px;
+grid-template-areas:
+"navbar navbar"
+"s main"
+"s main"
+"s footer";
+}
+@media screen and (max-width:780px){
+  .layout{
+    grid-template-columns:40px;
+    min-height:100vh;
+  }
+}
+
+.navbar{
+  grid-area: navbar;
+  width:100%;
+  background-color:#496182;
+  height:5rem;
+
+}
+@media screen and (max-width:780px){
+  .navbar{
+    width:100%;
+  }
+}
+
+.navbar i{
+  list-style: none;
+  font-size: 22px;
+  text-decoration: none;
+  color:white;
+}
+
+.logo img{
+  width:90px;
+  height:70px;
+  padding-left: 10px;
+  mix-blend-mode: multiply;
+}
+.user-wrapper{
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.user-wrapper img{
+  border-radius: 50%;
+  margin-right: .5rem;
+}
+.user-wrapper h5{
+  color:white;
+  margin-bottom: 0px !important;
+}
+.user-wrapper small{
+  display: inline-block;
+  color:grey;
+}
+
+
+.search{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width:780px){
+  .search{
+    position: absolute;
+    left:45%;
+}
+.search input{
+  max-width:200px;
+}
+}
+
+.search input{
+  border:1px solid gray;
+  border-radius: 30px;
+  padding:6px 10px;
+  width:450px;
+}
+
+.search input[type=search]:focus{
+  outline:none !important;
+}
+
+.search i{
+  color:whitesmoke;
+  font-size:20px;
+}
+
+
+
+.sidebar {
+  min-height:100vh;
+  grid-area: s;
+  background-color:#496182;
+  padding-left: 10px;
+  display:flex;
+  flex-direction: column;
+}
+
+.sidebar a{
+  margin-bottom: 15px;
+  margin-top:10px;
+  margin-left:5px;
+  color:whitesmoke;
+  font-size: 1rem;
+  font-family: Poppins;
+  background-color: transparent;
+}
+@media screen and (max-width:780px){
+  .sidebar a{
+    margin-left: 1px;
+  }
+}
+.sidebar a:hover{
+  transform: scale(1.1);
+  color:gray;
+}
+.sidebar span{
+  padding-left: 6px;
+}
+@media screen and (max-width:780px){
+  .sidebar span{
+    display: none;
+  }
+}
+
+
+.main {
+  grid-area: main;
+  padding-left:20px;
+  padding-top: 20px;
+}
+@media screen and (max-width:780px){
+  .main{
+    padding-left:5px;
+  }
+}
+
+
+
+
+.cards-panel{
+  width: 100%;
+  display:flex;
+  justify-content:flex-start;
+  margin-bottom:5rem;
+  column-gap: 4rem;
+}
+
+@media screen and (max-width:780px){
+  .cards-panel{
+    column-gap:5px;
+
+  }
+}
+.cards{
+  width: 10rem;
+}
+@media screen and (max-width:780px){
+}
+
+.cards-panel:hover {
+cursor: pointer;
+}
+
+.cards-panel:last-child{
+  padding-right: 4rem;
+}
+
+
+
+
+button.delete{
+  border: none;
+  color:#F14040;
+  background:none;
+}
+
+button.edit{
+  border:none;
+  color:#15BB15;
+  background:none;
+}
+button.delete i:hover{
+  cursor: pointer;
+  transform: scale(1.8);
+}
+button.edit i:hover{
+  cursor: pointer;
+  transform: scale(1.8);
+}
