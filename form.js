@@ -47,7 +47,7 @@ function checkInputs() {
 
 	if(passwordValue === '') {
 		setErrorFor(password, 'Password cannot be blank');
-	} else if(passwordValue.length <= 6){
+	} else if(passwordValue.length < 6){
 		setErrorFor(password, 'Passwords should be longer than 6 character');
 	}
 		else{
@@ -59,12 +59,12 @@ function checkInputs() {
 
 	} else if(passwordValue !== password2Value) {
 		setErrorFor(password2, 'Passwords does not match');
-	} else if(password2Value.length <= 6){
+	} else if(password2Value.length < 6){
 		setErrorFor(password2, 'Passwords should be longer than 6 character');
 	}
 	else{
 		setSuccessFor(password2);
-		window.location.replace("login.html");
+		window.location.replace("index.html");
 	}
 
 }
